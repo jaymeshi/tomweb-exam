@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+// Colors
+$black1: #191A1C;
+$black2: #2A2F35;
+$black3: #3B4046;
+$gray: #787F87;
+$gray2: #D9D9D9;
+$white: #FFFFFF;
+$reportsColor: #DD8E54;
+$blogsColor: #AD8EBF;
+$sportsColor: #BB7082;
+$gradient: linear-gradient(0deg, #191A1CFF 0%, #191A1C00 100%);
+
+// Font
+$serif: 'IBM Plex Serif';
+$sans: 'IBM Plex Sans';
+
+// Mixins
+
+    // Headings
+@mixin bold-serif{
+    font-weight: 700;
+    font-family: $serif;
+}
+
+@mixin heading1{
+    @include bold-serif();
+    font-size: 40px;
+}
+
+@mixin heading2{
+    @include bold-serif();
+    font-size: 32px;
+}
+
+@mixin heading3{
+    @include bold-serif();
+    font-size: 24px;
+}
+
+@mixin heading4{
+    @include bold-serif();
+    font-size: 18px;
+}
+
+@mixin heading5{
+    @include bold-serif();
+    font-size: 16px;
+}
+
+    // Body
+@mixin normal{
+    font-weight: 400;
+}
+
+@mixin semibold{
+    font-weight: 600;
+}
+
+@mixin body-large {
+    font-family: $sans;
+    font-size: 16px;
+}
+
+@mixin body-medium {
+    font-family: $sans;
+    font-size: 12px;
+}
+
+@mixin body-normal {
+    font-family: $sans;
+    font-size: 10px;
+}
+
+@mixin body-small {
+    font-family: $sans;
+    font-size: 8px;
+}

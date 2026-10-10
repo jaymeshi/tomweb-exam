@@ -1,0 +1,27 @@
+@use "./Variables/Variables.scss" as var;
+
+.App {
+  text-align: center;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+
+  h1{
+    @include var.heading1;
+  }
+  h2{
+    @include var.heading2;
+  }
+  h3{
+    @include var.heading3;
+  }
+  h4{
+    @include var.heading1;
+  }
+
+  *{
+    text-decoration: none;
+  }
+}

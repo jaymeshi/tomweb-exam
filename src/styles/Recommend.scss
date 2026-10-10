@@ -1,0 +1,28 @@
+@use "./Variables/Variables.scss" as var;
+
+.recommend-div{
+    margin-bottom: 3vw;
+    margin-top: 2vw;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .recommend{
+        @include var.heading3;
+        width: 84%;
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width:74vh){
+    .recommend-div{
+        .recommend{
+            margin-top: 0;
+            @include var.heading2;
+            margin-bottom: 0.5em;
+        }
+        margin-bottom: 12vw;
+        margin-top: 12vw;
+    }
+}

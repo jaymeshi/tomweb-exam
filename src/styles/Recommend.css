@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+.recommend-div {
+  margin-bottom: 3vw;
+  margin-top: 2vw;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.recommend-div .recommend {
+  font-weight: 700;
+  font-family: "IBM Plex Serif";
+  font-size: 24px;
+  width: 84%;
+  text-align: left;
+}
+
+@media only screen and (max-width: 74vh) {
+  .recommend-div .recommend {
+    margin-top: 0;
+    font-weight: 700;
+    font-family: "IBM Plex Serif";
+    font-size: 32px;
+    margin-bottom: 0.5em;
+  }
+  .recommend-div {
+    margin-bottom: 12vw;
+    margin-top: 12vw;
+  }
+}/*# sourceMappingURL=Recommend.css.map */

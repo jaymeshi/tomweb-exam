@@ -1,0 +1,11 @@
+.pages {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3vw;
+}
+.pages .postlist {
+  margin-top: 3em;
+}/*# sourceMappingURL=PostPage.css.map */

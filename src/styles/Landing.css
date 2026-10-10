@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+.landing {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  align-items: center;
+}
+.landing .featured {
+  overflow: hidden;
+  background-image: linear-gradient(0deg, #191a1c 0%, rgba(25, 26, 28, 0) 100%);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #D9D9D9;
+  margin: 6.5vh 7.8vw 0vh 7.8vw;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 85vw;
+  max-width: 1100px;
+  aspect-ratio: 16/9;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  transition: filter 400ms;
+}
+.landing .featured .featureBg {
+  position: absolute;
+  height: inherit;
+  max-height: inherit;
+  max-width: inherit;
+  width: inherit;
+  padding: 0;
+  margin: 0;
+  border-radius: inherit;
+  aspect-ratio: 16/9;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+.landing .featured #gradient {
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  max-height: inherit;
+  max-width: inherit;
+  border-radius: inherit;
+  z-index: 1;
+  aspect-ratio: 16/9;
+  background-image: linear-gradient(0deg, #191a1c 0%, rgba(25, 26, 28, 0) 100%);
+}
+.landing .featured .featureText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 60%;
+  min-width: 500px;
+  margin: 7%;
+  margin-top: auto;
+  gap: 15px;
+  color: #FFFFFF;
+  z-index: 1;
+}
+.landing .featured .featureText .featureTitle {
+  font-weight: 700;
+  font-family: "IBM Plex Serif";
+  font-size: 40px;
+  text-decoration: none;
+  text-align: left;
+  align-content: space-evenly;
+  line-height: 1.25em;
+  margin: 0;
+  margin-right: 5vw;
+  margin-top: auto;
+  line-clamp: 2;
+}
+.landing .featured .featureText .featureSub {
+  font-family: "IBM Plex Sans";
+  font-size: 16px;
+  font-weight: 600;
+  text-align: left;
+  margin: 0;
+  line-height: 1.25;
+  letter-spacing: 0%;
+  width: 75%;
+}
+.landing .featured .featureText .featureSub span {
+  font-weight: 400;
+  text-align: left;
+  margin: 0;
+  line-height: 1.25;
+  letter-spacing: 0%;
+}
+.landing .featured .featureText .featureDateDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0;
+  gap: 8px;
+}
+.landing .featured .featureText .featureDateDiv .calendar {
+  height: 100%;
+  margin: 0;
+}
+.landing .featured .featureText .featureDateDiv .date {
+  font-family: "IBM Plex Sans";
+  font-size: 12px;
+  margin: 0;
+}
+.landing .featured:hover {
+  filter: opacity(80%);
+}
+.landing .latest-div {
+  margin-bottom: 5vw;
+}
+.landing .latest-div .latest {
+  width: 100%;
+  text-align: left;
+}
+.landing .dark-bg {
+  background-color: #191A1C;
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 4vw 0;
+}
+.landing .dark-bg * {
+  color: #FFFFFF;
+}
+
+@media only screen and (max-width: 74vh) {
+  .landing {
+    width: 100%;
+  }
+  .landing .featured {
+    margin: 0vw;
+    margin-top: 4vh;
+    height: 85vw;
+    width: 82vw;
+    overflow: hidden;
+    position: relative;
+  }
+  .landing .featured .featureBg {
+    position: absolute;
+    height: inherit;
+    width: inherit;
+    margin: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+    transform: scale(1.3);
+    overflow: hidden;
+  }
+  .landing .featured #gradient {
+    position: absolute;
+    height: inherit;
+    width: inherit;
+    aspect-ratio: 16/9;
+    border-radius: inherit;
+    z-index: 1;
+    background-image: linear-gradient(0deg, #191a1c 0%, rgba(25, 26, 28, 0) 100%);
+  }
+  .landing .featured .featureText {
+    gap: 15px;
+    width: 82%;
+    min-width: 100px;
+  }
+  .landing .featured .featureText .featureTitle {
+    font-weight: 700;
+    font-family: "IBM Plex Serif";
+    font-size: 24px;
+    line-height: 3.5vh;
+  }
+  .landing .featured .featureText .featureSub {
+    font-family: "IBM Plex Sans";
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.25em;
+    width: 90%;
+  }
+  .landing .featured .featureText .featureSub span {
+    font-weight: 400;
+    line-height: 1.25em;
+  }
+  .landing .featured .featureText .featureDateDiv {
+    gap: 10px;
+  }
+  .landing .featured .featureText .featureDateDiv .date {
+    font-family: "IBM Plex Sans";
+    font-size: 10px;
+  }
+}/*# sourceMappingURL=Landing.css.map */

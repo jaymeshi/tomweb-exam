@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@view-transition {
+  navigation: auto;
+}
+.navbar {
+  width: 100%;
+  height: 80px;
+  background-color: #191A1C;
+  display: flex;
+  flex-direction: row;
+}
+.navbar .title {
+  flex: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 100px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.navbar .title #menuIcon, .navbar .title #closeIcon {
+  font-size: 500%;
+}
+.navbar .title h3 {
+  font-weight: 700;
+  font-family: "IBM Plex Serif";
+  font-size: 24px;
+  color: #FFFFFF;
+  width: 161px;
+  height: 31px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-decoration: none;
+}
+.navbar .title .titleLink {
+  text-decoration: none;
+}
+.navbar .title button {
+  display: none;
+}
+.navbar .buttons {
+  flex: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  flex-direction: row;
+  padding-top: 0px;
+  padding-right: 100px;
+  gap: 46px;
+}
+.navbar .buttons .navBtn {
+  font-family: "IBM Plex Sans";
+  font-size: 16px;
+  color: #FFFFFF;
+  width: unset;
+  height: unset;
+  line-height: 1;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom-color 0.3s;
+}
+.navbar .buttons .navBtn:hover {
+  border-bottom-color: #FFFFFF;
+}
+.navbar .menu {
+  display: none;
+  height: 0;
+  transition: height 300ms;
+}
+.navbar .closed {
+  display: none;
+}
+
+@media only screen and (max-width: 75vh) {
+  .navbar {
+    height: 18vw;
+  }
+  .navbar .buttons {
+    display: none;
+  }
+  .navbar .title {
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  .navbar .title .menuButton {
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    height: 10em;
+    margin-top: 4.5em;
+    margin-left: -4em;
+    position: absolute;
+    z-index: 20;
+  }
+  .navbar .title .menuButton .icon {
+    position: absolute;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    font-size: 450%;
+    color: #FFFFFF;
+  }
+  .navbar .title .menuButton .fade-in {
+    opacity: 100%;
+    visibility: visible;
+    transform: scale(1);
+  }
+  .navbar .title .menuButton .fade-out {
+    opacity: 0%;
+    visibility: hidden;
+    transform: scale(0.8);
+  }
+  .navbar .title h3 {
+    font-weight: 700;
+    font-family: "IBM Plex Serif";
+    font-size: 24px;
+    margin-left: -3em;
+    width: 100vw;
+    height: 4vh;
+    color: #FFFFFF;
+    font-size: 2.35em;
+    line-height: 60%;
+    letter-spacing: 2%;
+    visibility: visible;
+    text-align: center;
+  }
+  .navbar .menu {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    flex-direction: column;
+    align-content: center;
+    gap: 7vw;
+    position: absolute;
+    background-color: #191A1C;
+    color: #FFFFFF;
+    margin-top: 18vw;
+    padding: 4vh 0vh;
+    z-index: 10;
+    visibility: hidden;
+    transition: height 0.2s ease, visibility 0.2s;
+  }
+  .navbar .menu .btn {
+    font-family: "IBM Plex Sans";
+    font-size: 16px;
+    font-weight: 600;
+    font-size: 24px;
+    margin: 0;
+    border-width: 3px;
+    text-decoration: none;
+    line-height: 0;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    opacity: 0;
+    transition: opacity 0.2s ease, border-bottom-color 0.3s ease;
+  }
+  .navbar .menu .btn-open {
+    opacity: 100%;
+  }
+  .navbar .menu .btn-closed {
+    opacity: 0;
+  }
+  .navbar .menu .btn:hover {
+    border-bottom-color: #FFFFFF;
+  }
+  .navbar .open {
+    visibility: visible;
+    height: 20vh;
+  }
+  .navbar .closed {
+    visibility: hidden;
+    height: 0;
+  }
+}/*# sourceMappingURL=Navbar.css.map */

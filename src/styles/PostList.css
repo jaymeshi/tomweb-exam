@@ -1,0 +1,38 @@
+.posts {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+.posts .vertical {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  margin-top: 2vw;
+  background-color: transparent;
+  gap: 5vw;
+}
+.posts .horizontal {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  padding: 0;
+  background-color: transparent;
+  gap: 4vw;
+}
+
+@media only screen and (max-width: 74vh) {
+  .posts .horizontal {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 0;
+    gap: 4vw;
+  }
+}/*# sourceMappingURL=PostList.css.map */

@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+.pageheader {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  padding-top: 8vh;
+  padding-bottom: 9vh;
+  gap: 0vh;
+}
+.pageheader h1 {
+  font-weight: 700;
+  font-family: "IBM Plex Serif";
+  font-size: 40px;
+  padding: 0;
+  line-height: 0.7em;
+  margin: 3vh 10.5vh;
+}
+.pageheader p {
+  font-family: "IBM Plex Sans";
+  font-size: 16px;
+  width: 60vw;
+  max-width: 32em;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  margin: 0 10.5vh;
+}
+
+@media only screen and (max-width: 74vh) {
+  .pageheader {
+    padding-bottom: 6vh;
+  }
+  .pageheader h1 {
+    margin-left: 8vw;
+  }
+  .pageheader p {
+    font-size: 20px;
+    margin-left: 8vw;
+    width: 75vw;
+  }
+}/*# sourceMappingURL=PageHeader.css.map */

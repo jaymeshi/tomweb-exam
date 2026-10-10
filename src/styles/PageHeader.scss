@@ -1,0 +1,42 @@
+@use './Variables/Variables.scss' as var;
+
+.pageheader{
+    width: 100%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    padding-top:8vh;
+    padding-bottom: 9vh;
+    gap: 0vh;
+
+    h1{
+        @include var.heading1;
+        padding:0;
+        line-height: 0.7em;
+        margin: 3vh 10.5vh;
+    }
+
+    p{
+        @include var.body-large;
+        width:60vw;
+        max-width:32em;
+        padding:0;
+        margin:0;
+        text-align: left;
+        margin: 0 10.5vh;
+    }
+}
+
+@media only screen and (max-width:74vh){
+    .pageheader{
+        padding-bottom: 6vh;
+        h1{
+            margin-left: 8vw;
+        }
+        p{
+            font-size: 20px;
+            margin-left: 8vw;
+            width:75vw;
+        }
+    }
+}
